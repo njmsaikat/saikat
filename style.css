@@ -153,10 +153,10 @@ header .navbar ul li a.active::before{
     float: left;
     width: 100%;
     padding: 80px 0px;
-    background-color: #292929;
+    background-color: #353535;
 }
 
-.about h2.title{
+h2.title{
     font-size: 30px;
     font-weight: 600;
     margin: 0;
@@ -168,7 +168,7 @@ header .navbar ul li a.active::before{
     letter-spacing: .5px;
 }
 
-.about h2.title::before{
+h2.title::before{
     content: '';
     position: absolute;
     width: 80px;
@@ -273,4 +273,67 @@ header .navbar ul li a.active::before{
 
 /*Service Section*/
 
+.services{
+    float: left;
+    width: 100%;
+    padding: 80px 0px;
+    background-color: #353535;
+}
 
+.services .services-content {
+    width: 100%;
+    float: left;
+}
+.services .services-content .card{
+    width: 30%;
+    float: left;
+    padding: 15px;
+}
+
+.services .services-content .card .box{
+    background-color: #353535;
+    padding: 30px;
+    position: relative;
+}
+
+.services .services-content .card .box::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: 0px;
+    height: 3px;
+    width: 0;
+    background-color: #f3971b;
+    z-index: 1;
+    transition: width .5s ease;
+
+}
+
+.services .services-content .card .box:hover::before{
+
+    width: 100%;
+}
+
+.services .services-content .card .box .icon{
+    text-align: center;
+    font-size: 40px;
+    color: #f3971b;
+}
+
+.services .services-content .card .box h3{
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    margin: 20px 0 10px;
+    font-weight: 600;
+}
+
+.services .services-content .card .box p{
+    color: #c2c0c3;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: .5px;
+    text-align: center;
+    font-weight: 400;
+
+}
