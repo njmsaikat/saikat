@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
+
+body{
+    font-family: 'Raleway', sans-serif;
+    margin:0;
+}
+
+*{
+    box-sizing: 0;
+    text-decoration: none;
+    outline: none;
+}
+
+.container{
+    max-width: 1170px;
+    margin: auto;
+}
+
+/*Header Section*/
+
+header{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    padding: 15px;
+    z-index: 10;
+}
+
+header .logo{
+    float: left;
+}
+
+header .logo a{
+    font-size: 30px;
+    display: inline-block;
+    padding: 5px 0px;
+    color: #ffffff;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+header .logo a span{
+    color: #f3971b;
+}
+
+header .navbar{
+    float: right;
+}
+
+header .navbar ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header .navbar ul li{
+    display: inline;
+    padding: 0 15px;
+}
+
+header .navbar ul li a{
+    display: inline-block;
+    padding: 10px 0px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #ffffff;
+    position: relative; 
+}
+
+header .navbar ul li a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    margin-top: -5px;
+    height: 2px;
+    left: 0px;
+    background-color: #f3971b;
+    width: 0;
+    transition: width .5s ease;
+
+}
+
+header .navbar ul li a:hover::before{
+    width: 100%;
+}
+
+header .navbar ul li a.active::before{
+    width: 100%;
+}
+
+/*Home Section*/
+
+.home{
+    min-height: 100vh;
+    background-image: url("./images/saikat.jpg");
+    background-size: cover;
+    background-position: center;
+    float: left;
+    width: 100%;
+    position: relative;   
+}
+
+.home::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background-color: #000000;
+    opacity: 0.7;
+}
+
+.home .home-text{
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%);
+    left: auto;
+    z-index: 10;
+}
+
+.home .home-text h1{
+    font-size: 35px;
+    color: #ffffff;
+    margin: 10px 0px;
+    font-weight: 400;
+    animation: slideLeft 1.5s ease;
+}
+
+.home .home-text h3{
+    font-size: 60px;
+    color: #f3971b;
+    margin: 15px 0px 0px;
+    font-weight: 700;
+    animation: slideRight 1.5s ease;
+}
+
+@keyframes slideLeft{
+    0% {transform: translateX(-100%);opacity:0}
+    100% {transform: translateX(0);opacity:1;}
+}
+
+@keyframes slideRight{
+    0%{transform: translateX(100%);opacity:0}
+    100%{transform: translateX(0);opacity:1}
+}
+
+/*About section*/
+
+.about{
+    float: left;
+    width: 100%;
+    padding: 80px 0px;
+    background-color: #292929;
+}
+
+.about h2.title{
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0;
+    padding-bottom: 70px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #f3971b;
+    position: relative;
+    letter-spacing: .5px;
+}
+
+.about h2.title::before{
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 2px;
+    left: 50%;
+    margin-left: -40px;
+    top: 50px;
+    background-color: #f3971b;
+
+}
+
+.about .about-content{
+    width: 100%;
+    float: left;
+}
+
+.about .about-content .img{
+    float: left;
+    width: 30%;
+    padding: 15px;
+}
+
+.about .about-content .img img{
+    width: 100%;
+    border: 10px solid #3c3c3c;
+}
+
+.about .about-content .description{
+    float: left;
+    width: 60%;
+    padding: 15px;
+}
+
+.about .about-content .description h4{
+    font-size: 20px;
+    color: #ffffff;
+    margin: 0;
+    padding-bottom: 10px;
+    font-weight: 400;
+}
+
+.about .about-content .description h5{
+    font-size: 25px;
+    color: #ffffff;
+    margin: 0;
+    padding-bottom: 10px;
+    font-weight: 600;
+
+}
+
+.about .about-content .description p{
+    color: #c2c0c3;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: .5px;
+    text-align: left;
+    font-weight: 400;
+
+}
+
+.about .about-content .description p button{
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+.btn-bg{
+    padding: 12px 40px;
+    border-radius: 0%;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 400;
+    background-color: #f3971b;
+    border: 1px solid transparent;
+    letter-spacing: .5px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.btn-bg:hover{
+    border: 1px solid #f3971b;
+    color: #f3971b;
+    background-color: transparent;
+}
+
+.btn-light{
+    padding: 12px 40px;
+    border-radius: 0%;
+    font-size: 16px;
+    color:#f3971b;
+    font-weight: 400;
+    background-color: transparent;
+    border: 1px solid #f3971b;
+    letter-spacing: .5px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.btn-light:hover{
+    color: #ffffff;
+    background-color: #f3971b;
+}
+
+/*Service Section*/
+
+
