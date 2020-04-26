@@ -337,3 +337,127 @@ h2.title::before{
     font-weight: 400;
 
 }
+
+/*Skills Section*/
+
+.skills{
+    float: left;
+    width: 100%;
+    padding: 80px 0px;
+    background-color: #353535;
+}
+
+.skills .skills-content{
+    float: left;
+    width: 100%;
+}
+
+.skills .skills-content .card{
+    width: 100%;
+    float: left;
+    padding: 0px 15px;
+    margin-bottom: 50px;
+
+}
+
+.skills .skills-content .card label{
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 600;
+    display: block;
+    text-align: left;
+    margin: 15px 0;
+}
+
+.skills .skills-content .card .progress{
+    height: 10px;
+    width: 100%;
+    border-radius: 4px;
+    background-color: #292929;
+    position: relative;
+}
+
+.skills .skills-content .card .progress .inner{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: #f3971b;
+    border-radius: 4px;
+}
+
+.skills .skills-content .card .progress::before{
+    content: attr(data-text);
+    position: absolute;
+    right: 0px;
+    top: -30px;
+    color: #c2c0c3;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/*portfolio section*/
+
+.portfolio{
+    float: left;
+    width: 100%;
+    padding: 80px 0px;
+    background-color: #292929;
+}
+
+.portfolio .portfolio-content{
+    float: left;
+    width: 100%;
+}
+
+.portfolio .portfolio-content .card{
+    float: left;
+    width: 30%;
+    padding: 15px;
+}
+
+.portfolio .portfolio-content .card .box{
+    background-color: #353535;
+    padding: 15px;
+    position: relative;
+}
+.portfolio .portfolio-content .card .box::before{
+    content: '';
+    position: absolute;
+    left:0;
+    top: 0px;
+    height: 3px;
+    width: 0;
+    background-color: #f3971b;
+    z-index: 1;
+    transition: width .5s ease;
+}
+
+.portfolio .portfolio-content .card .box:hover::before{
+    width: 100%;
+}
+
+
+.portfolio .portfolio-content .card .box h3{
+    margin: 0;
+    padding: 15px 0 25px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: .5px;
+}
+.portfolio .portfolio-content .card .box h4{
+    margin: 0;
+    padding: 5px 0px 15px;
+    color: #f3971b;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+}
+.portfolio .portfolio-content .card .box img{
+    width: 100%;
+    display: block;
+}
+
+/*Blog-News Section*/
