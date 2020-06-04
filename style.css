@@ -447,7 +447,7 @@ background-color:transparent;
 	float: left;
 	width: 100%;
 	padding:80px 0px; 
-	background-color:#292929;
+	background-color:#353535;
 }
 
 .blog .blog-content{
@@ -462,7 +462,7 @@ background-color:transparent;
 }
 
 .blog .blog-content .card .box{
-	background-color: #353535;
+	background-color: #292929;
 	position: relative;
 }
 .blog .blog-content .card .box::before{
@@ -518,7 +518,7 @@ background-color:transparent;
 	float: left;
 	width: 100%;
 	padding:80px 15px; 
-	background-color:#353535;
+	background-color:#292929;
 }
 
 .contact .contact-content{
@@ -539,7 +539,7 @@ background-color:transparent;
 	font-weight: 400;
 	display: block;
 	width: 100%;
-	background-color: #292929;
+	background-color: #353535;
 	transition: border .5s ease;
 }
 .contact .contact-content input:focus,
@@ -563,7 +563,7 @@ background-color:transparent;
 footer{
 	float: left;
 	width: 100%;
-	background-color:#292929;
+	background-color:#353535;
 	padding:50px 0px;
 }
 
@@ -576,13 +576,13 @@ footer .social-links{
 	float:left;
 	width: 100%;
 	text-align: center;
-	border-top:1px solid #353535;
+	border-top:3px solid #292929;
 	padding-top:15px;
 }
 footer .social-links ul{
-padding:0;
-list-style: none;
-margin:0;
+    padding:0;
+    list-style: none;
+    margin:0;
 }
 footer .social-links ul li{
 	display: inline;
@@ -630,7 +630,6 @@ footer .footer-content .box p{
 	font-size: 16px;
 	line-height: 25px;
 	letter-spacing:.5px;
-	
 	font-weight: 400;
 	padding:10px 0;
 	margin:0px;	
