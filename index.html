@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Saikat Roy / Portfolio</title>
+    <link rel="icon" href="images/icon.jpg">
 </head>
 <body>
     <!--Header Start-->
@@ -16,13 +17,13 @@
 
             <div class="navbar">
                 <ul>
-                    <li><a href="#" class="active">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
                     <!-- <li><a href="#">Team</a></li> -->
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -30,7 +31,7 @@
     <!--Header End-->
 
     <!--Home Start-->
-    <section class="home">
+    <section class="home" id="home">
         <div class="container">
             <div class="home-text">
                 <h1>Hi, I'm Saikat Roy</h1>
@@ -43,7 +44,7 @@
     <!--Home End-->
 
     <!--About Start-->
-    <section class="about">
+    <section class="about" id="about">
         <div class="container">
             <h2 class="title">About Me</h2>
             <div class="about-content">
@@ -75,7 +76,7 @@
     <!--About End-->
 
     <!--Service Start-->
-    <section class="services">
+    <section class="services" id="services">
         <div class="container">
             <h2 class="title">Services</h2>
                 <div class="services-content">
@@ -219,7 +220,7 @@
     <!--Skills End-->
 
     <!--Portfolio Start-->
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
         <div class="container">
             <h2 class="title">Portfolio</h2>
             <div class="portfolio-content">
@@ -273,7 +274,7 @@
     <!--Portfolio End-->
 
     <!-- Blog Start -->
-    <section class="blog">
+    <section class="blog" id="blog">
         <div class="container">
             <h2 class="title">Blog</h2>
             <div class="blog-content">
@@ -324,7 +325,7 @@
     <!-- Blog End -->
 
     <!--Contact Start-->
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="container"> 
             <h2 class="title">Contact Me</h2>
             <div class="contact-content">
@@ -370,16 +371,44 @@
             </div>
             <div class="social-links">
                 <ul>
-                    <li><a href=""><span class="fa fa-facebook"></span></a></li>
-                    <li><a href=""><span class="fa fa-linkedin"></span></a></li>
-                    <li><a href=""><span class="fa fa-skype"></span></a></li>
-                    <li><a href=""><span class="fa fa-instagram"></span></a></li>
+                    <li><a href="https://www.facebook.com/njmsaikat" target="_blank"><span class="fa fa-facebook"></span></a></li>
+                    <li><a href="https://www.linkedin.com/in/njmsaikat/" target="_blank"><span class="fa fa-linkedin"></span></a></li>
+                    <li><a href="https://join.skype.com/invite/f5GQkkQUTahB" target="_blank"><span class="fa fa-skype"></span></a></li>
+                    <li><a href="https://www.instagram.com/njmsaikat/" target="_blank"><span class="fa fa-instagram"></span></a></li>
                     
                 </ul>
             </div>
         </div>
     </footer>
     <!--Footer End-->
+
+    <!--jquery code-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            var bottom=$("header").outerHeight();
+            var header=$("header").offset().top + bottom;
+
+            $(window).scroll(function(){
+                if($(window).scrollTop()>=header){
+                    $("header").addClass("sticky")
+                }
+                else{
+                    $("header").removeClass("sticky")
+                }
+            })
+
+            //navbar activ link
+
+            $(".navbar ul li a").click(function(){
+                
+                $(".navbar ul li a").removeClass("active")
+                $(this).addClass("active");
+            })
+
+        })
+    </script>
 
 
 
