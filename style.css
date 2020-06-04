@@ -578,3 +578,88 @@ h2.title::before{
     display: block;
     margin: auto;
 }
+
+/*Footer Section*/
+
+footer{
+    float: left;
+    width: 100%;
+    background-color: #353535;
+    padding: 50px 0px;
+}
+
+footer .footer-content{
+    float: left;
+    width: 100%;
+}
+
+footer .footer-content .box{
+    width: 30%;
+    float: left;
+    padding: 15px;
+    text-align: center;
+}
+
+footer .footer-content .box .icon span{
+    color: #f3971b;
+    font-size: 30px;
+}
+
+footer .footer-content .box h4{
+    font-size: 18px;
+    color: #ffffff;
+    margin: 0;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+footer .footer-content .box p{
+    color: #c2c0c3;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: .5px;
+    font-weight: 400;
+    padding: 10px 0;
+    margin: 0;
+}
+
+footer .social-links{
+    float: left;
+    width: 100%;
+    text-align: center;
+    border-top: 3px solid #292929;
+    padding-top: 15px;
+}
+
+footer .social-links ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+footer .social-links ul li{
+    display: inline;
+}
+
+footer .social-links ul li a{
+    display: inline-block;
+    padding: 15px 15px;
+}
+
+footer .social-links ul li a span{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid #f3971b;
+    color: #f3971b;
+    line-height: 38px;
+    text-align: center;
+    font-size: 16px;
+    transition: all .5s ease;
+}
+
+footer .social-links ul li a span:hover{
+    background-color: #f3971b;
+    color: #ffffff;
+}
