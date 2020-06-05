@@ -8,4 +8,4 @@
 Based on basically html, css and a littile bit of jquiry is used to create this page....
 
 
-![](images/entirepage.png)
+![](images/fullpage.png)
