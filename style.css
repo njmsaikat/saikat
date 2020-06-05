@@ -252,6 +252,13 @@ background-color:transparent;
 	background-color:#f3971b;
 }
 
+.about .about-content .description p button a{
+    color: #ffffff;
+}
+.about .about-content .description p button a:hover{
+    color:rgb(17, 176, 224);
+}
+
 
 
 /*Service Section*/
