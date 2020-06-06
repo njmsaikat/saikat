@@ -579,6 +579,17 @@ footer .footer-content{
 	width: 100%;
 
 }
+footer .footer-content .box p a{
+	color: aliceblue;
+	text-decoration: none;
+
+}
+
+footer .footer-content .box p a:hover{
+	color: #f3971b;
+
+}
+
 footer .social-links{
 	float:left;
 	width: 100%;
