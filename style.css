@@ -393,6 +393,9 @@ background-color:transparent;
 	width: 100%;
 	padding:80px 0px; 
 	background-color:#292929;
+	display: flex;
+	justify-content: center;
+    align-items: center; 
 }
 
 .portfolio .portfolio-content{
@@ -779,3 +782,9 @@ footer .footer-content .box{
 	width: 100%;
 }
 }
+
+
+
+/*Loader*/
+
+
