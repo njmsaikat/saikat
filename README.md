@@ -23,6 +23,15 @@
 - JavaScript
 - jQuiry
 
+## Designing Tools-
+- Adobe Photoshop
+- Figma
+- Adobe XD
+
+## Dev Tools-
+- VS Code
+- Git
+
 **HTML SAMPLE**
 
 ```HTML
