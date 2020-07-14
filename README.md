@@ -8,12 +8,13 @@
 # Portfolio
 
 ## Features-
-- Animated Landing Page
-- Individual Section in single page as standard
-- Responsive, Always ready to show the best in any display size
-- Interactive animated options
-- Contact form
-- Location, Blogging Thumbnail and Portfolio Section included
+
+1. Animated Landing Page
+2. Individual Section in single page as standard
+3. Responsive, Always ready to show the best in any display size
+4. Interactive animated options
+5. Contact form
+6. Location, Blogging Thumbnail and Portfolio Section included
 
 **Using tools -**
 
